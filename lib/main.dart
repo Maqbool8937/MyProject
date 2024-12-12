@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:webview_flutter/webview_flutter.dart';
-import 'package:wedding_project/screens/website_screen.dart';
 
-import 'screens/add_links_screen.dart';
-import 'screens/onboarding_screen.dart';
+import 'sqlite/sqlite_screen.dart';
 import 'widgets/provider/theme_provider.dart';
 
 void main() {
@@ -25,7 +22,7 @@ class MyApp extends StatelessWidget {
    
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'flutter easywedding app',
      
        theme:themeProvider.isDarkMode ? ThemeData.dark() : ThemeData.light(),
       // theme: ThemeData(
@@ -34,7 +31,7 @@ class MyApp extends StatelessWidget {
       //   useMaterial3: true,
       // ),
       
-      home:  AddLinksScreen()
+      home:  TaskApp()
     );
   }
 }
